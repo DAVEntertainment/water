@@ -1,2 +1,2 @@
 # water
-water is a collection of demos in C++
+water is a library contains shared component for C++
