@@ -26,6 +26,9 @@ Content
    Return an iterator that yields tuples of an index and an item of the
    *sequence*. (And so on.)
 
+.. if python scripts path is included in conf.py,
+   then we can easily gen its doc with following commands
+
 .. autoclass:: build.Builder
 
 .. autofunction:: build.main

@@ -15,10 +15,12 @@ import sys
 
 
 # @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-repoRoot = os.path.abspath(os.path.join(__file__, '..', '..'))
+repoRoot = os.path.abspath(os.path.join(__file__, '..', '..', '..'))
+
+# @@@ if build.py and builder.py cannot be imported,
+# @@@ then the doc for them will not be included
 scriptsRoot = os.path.abspath(os.path.join(repoRoot, 'scripts'))
-sys.path.insert(0, scriptsRoot) # @@@ if build.py and builder.py cannot be imported,
-                                # @@@ then the doc for them will not be included
+sys.path.insert(0, scriptsRoot)
 
 # -- Project information -----------------------------------------------------
 project = 'demo'
@@ -61,7 +63,7 @@ extensions = [ # @@@
 # Breathe Configuration
 breathe_default_project = 'demo' # @@@
 breathe_projects = {
-    'demo': os.path.join(repoRoot, '.build/docs/doxygen/xml')  # @@@ add demo root
+    'demo': os.path.join(repoRoot, '.build/doxygen/xml')  # @@@ add demo root
 }
 # @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -183,7 +185,7 @@ html_theme = 'alabaster'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

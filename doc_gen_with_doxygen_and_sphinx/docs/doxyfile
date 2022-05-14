@@ -60,7 +60,7 @@ PROJECT_LOGO           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = @DOXYGEN_OUTPUT_DIR@
+OUTPUT_DIRECTORY       = .build/doxygen
 # @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
@@ -877,7 +877,14 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = @DOXYGEN_INPUT@
+INPUT                  = src/main.cpp \
+    src/common/math.cpp \
+    src/common/math.H \
+    src/biz/show_biz.cpp \
+    src/biz/show_biz.h \
+    scripts/build.py \
+    scripts/builder.py \
+    Readme.md
 # @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 

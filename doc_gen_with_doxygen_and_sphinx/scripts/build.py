@@ -47,5 +47,6 @@ def main():
 
 if '__main__' == __name__:
     builder = Builder()
-    builder.SetupAndRun(sys.argv[1:])
+    builder.Setup(sys.argv[1:])
+    builder.Run()
 

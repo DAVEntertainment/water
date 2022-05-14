@@ -4,8 +4,6 @@
 #include <memory>
 #include "common/math.h"
 
-void show(int);
-
 //!
 //! class Opera hhh
 //!     a class to manipulate the procedure of Opera

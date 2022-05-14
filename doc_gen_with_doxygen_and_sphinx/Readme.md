@@ -8,13 +8,23 @@ This is a project demo for documentation generation
 
 This can be specified by `USE_MDFILE_AS_MAINPAGE`, so that it will be used as the main page
 
-# How to gen doc with this demo?
+# How-gen setup environment for this demo
+### setup for doxygen
+1. install doxygen
+2. add doxygen/bin to path
 
-1. setup virtualenv, init with requirements.txt
-2. configure and build <root>/CMakeLits.txt in <root>/.build [exactly .build]
-3. run sphinx.cmd
+### Setup for sphinx
+1. setup virtualenv, init with requirements.txt (for sphinx)
 
-U can get demo doc in <root>/.build/docs/sphinx/index.html
+# How-to gen doc with this demo?
+1. run doxygen-cmd.cmd (in repo root)
+2. run sphinx-cmd.cmd (in repo root), from the virtualenv just created
+
+Be careful to run shpinx-cmd after doxygen-cmd, sphinx will include docs gen by doxygen
+
+U can get demo doc:
+- doxygen in <root>/.build/doxygen/html/index.html
+- sphinx in <root>/.build/sphinx/index.html
 
 # TODO:
 - [x] Generate with doxygen

@@ -1,3 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(demo)
+
 add_executable(demo
     ${CMAKE_CURRENT_LIST_DIR}/main.cpp
     ${CMAKE_CURRENT_LIST_DIR}/common/math.cpp
@@ -10,7 +13,6 @@ target_include_directories(demo
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/
 )
-
 
 # Log configurations
 message(STATUS "Configurations for src:")

@@ -8,8 +8,6 @@ int main(int argc, char* argv[]) {
     int b = 2;
     int c = add(a, b);
 
-    show(c);
-
     Opera opera;
     opera.Start();
     opera.Stop();

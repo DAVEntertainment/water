@@ -1,10 +1,6 @@
 #include <iostream>
 #include "show_biz.h"
 
-void show(int data) {
-    std::cout << std::to_string(data) << std::endl;
-}
-
 //! Create the opera (in .cpp)
 Opera::Opera() {
     std::cout << "~~~ Create Opera " << this << std::endl;

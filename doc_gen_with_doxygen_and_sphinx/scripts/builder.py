@@ -11,10 +11,6 @@ class StepBase:
     def Run(self):
         pass
 
-    def SetupAndRun(self, aConfig):
-        self.Setup(aConfig)
-        self.Run()
-
 
 #! Base-class of builder, to define a build procedure
 class BuilderBase:
@@ -46,10 +42,5 @@ class BuilderBase:
 
     def Run(self):
         for step in self.mySteps:
-            step.SetupAndRun(self.myConfig)
-
-    def SetupAndRun(self, aArguments):
-        self.Setup(aArguments)
-        self.Run()
-
-
+            step.Setup(self.myConfig)
+            step.Run()
