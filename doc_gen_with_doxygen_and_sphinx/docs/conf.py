@@ -14,16 +14,18 @@ import os
 import sys
 
 
+# @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 repoRoot = os.path.abspath(os.path.join(__file__, '..', '..'))
 scriptsRoot = os.path.abspath(os.path.join(repoRoot, 'scripts'))
 sys.path.insert(0, scriptsRoot) # @@@ if build.py and builder.py cannot be imported,
                                 # @@@ then the doc for them will not be included
 
 # -- Project information -----------------------------------------------------
-
 project = 'demo'
 copyright = '2021, dav'
 author = 'dav'
+# @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -43,6 +45,8 @@ author = 'dav'
 # The master toctree document.
 root_doc = 'index'
 
+
+# @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -59,6 +63,8 @@ breathe_default_project = 'demo' # @@@
 breathe_projects = {
     'demo': os.path.join(repoRoot, '.build/docs/doxygen/xml')  # @@@ add demo root
 }
+# @@@@@@@@@@@@@@@ fix me @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
