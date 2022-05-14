@@ -33,11 +33,32 @@ Content
 Doxygen Specified Content
 =================================
 
+.. to involve doxygen doc, use breathe defined keywords to include pages gen by doxygen
+   see more at https://breathe.readthedocs.io/en/latest/index.html
+
 .. doxygenfunction:: add
 
 .. doxygenclass:: Opera
 
 .. doxygenclass:: Operator
+
+Doxygen Page
+=================================
+
+.. in .build/docs/doxygen/xml, there must be a xml named ???page.xml
+   in this case, indexpage.html
+   see more at https://breathe.readthedocs.io/en/latest/page.html
+.. doxygenpage:: index
+    :project: demo
+
+Doxygen Namespace
+=================================
+
+.. in .build/docs/doxygen/xml, there must be a xml named namespace???.xml
+   in this case, namespacebuild.html
+   see more at https://breathe.readthedocs.io/en/latest/namespace.html
+.. doxygennamespace:: build
+   :project: demo
 
 Doxygen Index
 =================================
