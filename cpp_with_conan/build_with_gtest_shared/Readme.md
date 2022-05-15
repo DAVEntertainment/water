@@ -1,8 +1,12 @@
 # Demo
 Demo to build with conan, link gtest static library to executable
 
+# Environment setup
+Setup virtualenv with requirements.txt
+
 # How to build
-Just run `build.cmd` in directory where `build.cmd` lies
+Just run `build.cmd` in directory in the directory where `build.cmd` lies,
+remember to use virtualenv(conan needed)
 
 # Run Demo
 build binaries will be found in `build/bin`, we can run `build/bin/demo.exe` in root
