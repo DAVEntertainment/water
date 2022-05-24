@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(demo
     Main.cpp
-    Demo.h
+    Demo0.h
+    Demo1.h
 )
 
 install(

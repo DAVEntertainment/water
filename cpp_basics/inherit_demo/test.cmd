@@ -1,4 +1,5 @@
 del /s demo.exe
+@REM rmdir /s /q .build
 mkdir .build
 
 @REM configure
